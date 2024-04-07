@@ -460,3 +460,12 @@ message NodeInfo {
     string address = 2;
     string hostname = 3;
 }
+
+enum JobState {
+    JobStateNone = 0;
+    JobStateInit = 1;
+    JobStateInProgress = 2;
+    JobStateFinished = 3;
+    JobStateFailed = 4;
+    JobStateRetry = 5;
+}
